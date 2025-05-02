@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --header: #1c1c1c;
+    --theme: #141414;
+    --text: white;
+}
+
+body {
+  background: var(--theme);
+  color: var(--text);
+}
+
+.header2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navegation.on {
+  margin-top: 20px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#navegation.off {
+  display: none;
+}
+
+#header,
+#button-menu {
+  background-color: var(--header);
+}
+
+#footer {
+  padding: 20px;
+  text-align: center;
+  color: var(--text);
+}
+
+.github-svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--text);
+}
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    
+    color: var(--text);
+  }
+  
+  #header {
+    background-color: var(--header);
+    padding: 10px;
+    top: 0;
+    position: sticky;
+  }
+  
+  .header2 > div > h1 {
+    font-size: 1.5em;
+  }
+  
+  .header2 > div > p {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  
+  #navegation > ul > li {
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#navegation > ul > li > a {
+  text-decoration: none;
+  color: var(--text);
+}
+  
+  #button-menu {
+    border: none;
+  }
+  
+}
+
+@media (min-width: 769px) {
+  
+body {
+    display: flex;
+    flex-direction: column;
+    
+    color: var(--text);
+  }
+  
+  #header {
+    background-color: var(--header);
+    padding: 30px;
+    top: 0;
+    position: sticky;
+  }
+  
+  .header2 > div > h1 {
+    font-size: 2.5em;
+  }
+  
+  .header2 > div > p {
+    font-weight: bold;
+    font-size: 2.3em;
+  }
+  
+  #navegation > ul > li {
+  font-size: 2.4em;
+  text-decoration: none;
+  font-weight: bold;
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#navegation > ul > li > a {
+  text-decoration: none;
+  color: var(--text);
+}
+  
+  #button-menu {
+    border: none;
+  }
+  
+  
+}
